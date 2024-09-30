@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed WhatsApp and Call Links</title>
+    <style>
+        /* Fixed position styles */
+        .fixed-bottom-links {
+            position: fixed;
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px;  /* Distance from the right */
+            z-index: 1000; /* Ensure it's on top */
+            display: flex;
+            flex-direction: column; /* Stack icons vertically */
+            gap: 10px; /* Spacing between icons */
+        }
+        .fixed-bottom-links a {
+            background-color: #25D366; /* WhatsApp color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .fixed-bottom-links a.call {
+            background-color: #007bff; /* Call button color */
+        }
+        .fixed-bottom-links a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Your website content goes here -->
+
+    <!-- Fixed WhatsApp and Call Links -->
+    <div class="fixed-bottom-links">
+        <a href="https://wa.me/918105913279" target="_blank">
+            <i class="fab fa-whatsapp"></i> <!-- WhatsApp icon -->
+        </a>
+        <a href="tel:+918105913279" class="call">
+            <i class="fas fa-phone"></i> <!-- Phone icon -->
+        </a>
+    </div>
+
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
